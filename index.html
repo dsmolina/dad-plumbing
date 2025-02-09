@@ -13,13 +13,34 @@
             --footer-color: #03045e;
         }
 
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        
-        header { background: var(--primary-color); color: white; text-align: center; padding: 1.5rem; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            width: 100%;
+        }
         header h1 { margin: 0; font-size: 2.5rem; }
         header p { margin: 10px 0 0; }
 
-        nav { text-align: center; background: var(--secondary-color); padding: 1rem 0; }
+        nav {
+            text-align: center;
+            background: var(--secondary-color);
+            padding: 1rem 0;
+            width: 100%;
+        }
         nav a {
             color: white;
             margin: 0 15px;
@@ -30,13 +51,38 @@
         }
         nav a:hover { background-color: #ffffff33; }
 
-        main { padding: 2rem; text-align: center; }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            width: 100%;
+        }
 
-        .container { padding: 2rem; text-align: center; }
-        .contact { background: var(--background-color); padding: 2rem; }
+        .container {
+            padding: 2rem;
+            text-align: center;
+        }
 
-        form { max-width: 600px; margin: auto; text-align: left; }
-        input, textarea { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+        .contact {
+            background: var(--background-color);
+            padding: 2rem;
+            width: 100%;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+            width: 100%;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
         button {
             background: var(--primary-color);
             color: white;
@@ -54,59 +100,7 @@
             color: white;
             text-align: center;
             padding: 1rem;
+            width: 100%;
         }
 
         @media (max-width: 600px) {
-            body { font-size: 14px; }
-            header, nav, .container, .contact, footer { padding: 1rem; }
-            nav a { display: block; margin: 5px 0; }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Our Plumbing Services</h1>
-        <p>Reliable, affordable, and professional plumbing solutions.</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <section class="container" id="about">
-            <h2>About Us</h2>
-            <p>We have been providing top-quality plumbing services for over 10 years. Our expert team ensures prompt and professional solutions for your home and business needs.</p>
-        </section>
-        <section class="container" id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Leak Repairs</li>
-                <li>Pipe Installations</li>
-                <li>Emergency Plumbing</li>
-                <li>Drain Cleaning</li>
-            </ul>
-        </section>
-        <section class="contact" id="contact">
-            <h2>Contact Us</h2>
-            <p>📞 Call us: (123) 456-7890</p>
-            <p>📧 Email: contact@plumbingservices.com</p>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Plumbing Services. All rights reserved.</p>
-    </footer>
-</body>
-</html>
