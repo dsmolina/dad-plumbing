@@ -22,6 +22,7 @@
             background-color: var(--background-color);
             color: #333;
             line-height: 1.6;
+            text-align: center;
         }
 
         header {
@@ -85,7 +86,6 @@
 
         .container {
             padding: 3rem 1rem;
-            text-align: center;
         }
 
         h2 {
@@ -108,6 +108,10 @@
             background-color: var(--secondary-color);
             color: white;
             padding: 3rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .contact-section h2 {
@@ -130,11 +134,24 @@
             text-decoration: underline;
         }
 
+        .service-area {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .map {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            border: 0;
+        }
+
         footer {
             background: var(--footer-color);
             color: white;
             padding: 2rem;
-            text-align: center;
         }
 
         footer p {
@@ -179,10 +196,10 @@
     <div class="container" id="services">
         <h2>Our Services</h2>
         <ul class="services-list">
-            <li>Leak Repairs</li>
-            <li>Pipe Installations</li>
-            <li>Emergency Plumbing</li>
-            <li>Drain Cleaning</li>
+            <li>Plumbing - Installation, repair or replacement of faucets, sinks, showers, bathtubs, outdoor showers & more</li>
+            <li>Heating - Installation, repair or replacement of boilers, water heaters, baseboard heat, radiant heat & more</li>
+            <li>Winterization / Seasonal turn on & off, pipe flushing, repair of frozen and/or burst pipes & fixtures</li>
+            <li>Filtration, New Construction, Home Improvement, Remodeling & Additions</li>
         </ul>
     </div>
 
@@ -190,6 +207,11 @@
         <h2>Call Us Today!</h2>
         <p class="contact-info">📞 <a href="tel:1234567890">(123) 456-7890</a></p>
         <p class="contact-info">📧 <a href="mailto:contact@plumbingservices.com">contact@plumbingservices.com</a></p>
+        <div class="service-area">
+            <h3>Service Area</h3>
+            <p>We provide services from Sandwich to Truro. In certain situations, we may be able to assist in other areas—please inquire!</p>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11938.515121844133!2d-69.990409!3d41.7890308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89fb168d1e9147f5%3A0xede7b3f8a11e7d2c!2sOrleans%2C%20MA!5e0!3m2!1sen!2sus!4v1616614890748!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <footer>
